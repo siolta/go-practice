@@ -4,17 +4,19 @@ import "fmt"
 
 func main() {
 
-	// will this work?
-	i int := 1
+	// for is the only loop in go
+	i := 1
 	for i <= 3 {
 		fmt.Println(i)
 		i = i + 1
 	}
 
+	// initial/condition/after for loop
 	for j := 7; j <=9; j++ {
 		fmt.Println(j)
 	}
 
+	// while equivalent
 	for {
 		fmt.Println("loop foreeeverr")
 		break

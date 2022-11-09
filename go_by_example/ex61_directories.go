@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"os"
-	"pathe/filepath"
+	"path/filepath"
 )
 
 func check(e error) {

@@ -15,6 +15,7 @@ func zeroptr(iptr *int) {
 	// to the current value at that address
 	// assigning a value to a d'ref'd pointer changes the value
 	// at the referenced address
+	// aka '*' means 'value at' the referenced address
 	*iptr = 0
 }
 
@@ -26,7 +27,7 @@ func main() {
 	zeroval(i)
 	fmt.Println("zeroval:", i)
 
-	// the & operator gives the memory address of i, aka a pointer
+	// the & operator gives the memory 'address of' i
 	zeroptr(&i)
 	fmt.Println("zeroptr:", i)
 
